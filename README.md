@@ -53,10 +53,12 @@ glows.
 
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 
+
 ## Developed by: Haarish V
 ## RegisterNumber:  23013963
 
-i.) Upcounter :
+### i) Upcounter :
+```
 module upcounter (clk,A);
 input clk;
 output reg [0:3]A;
@@ -68,11 +70,12 @@ A[2]=((A[3]))^A[2];
 A[3]=1^A[3];
 end
 endmodule
+```
 
 
 
-
-ii.)Downcounter :
+### ii)Downcounter :
+```
 module downcounter (clk,A);
 input clk;
 output reg [0:3]A;
@@ -84,7 +87,7 @@ A[2]=((~A[3]))^A[2];
 A[3]=1^A[3];
 end
 endmodule
-
+```
 ## Output:
 ## RTL LOGIC UP COUNTER AND DOWN COUNTER :
 
